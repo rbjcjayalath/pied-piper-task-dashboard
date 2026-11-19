@@ -58,13 +58,13 @@ task-dashboard/
 ![Task List Page 2](./screenshots/dashboard-page-2.png)
 
 ### Create Task Modal
-![Create Task Modal](./screenshots/create-task-modal.png)
+![Create Task Modal](./screenshots/create-task-model.png)
 
 ### Task Details Modal
-![Task Details Modal](./screenshots/task-details-modal.png)
+![Task Details Modal](./screenshots/task-details-model.png)
 
 ### Edit Task Modal
-![Edit Task Modal](./screenshots/edit-task-modal.png)
+![Edit Task Modal](./screenshots/edit-task-model.png)
 
 ## Getting Started
 1. **Install dependencies:**
