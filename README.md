@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TaskFlow Dashboard — Pied Piper Innovation
+
+A responsive Task Management Dashboard built with **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, and **Lucide Icons**, supporting task CRUD workflows via a mock JSON Server API (`db.json`) with an automatic `localStorage` fallback.
+
+## Features
+
+- **Dashboard Overview:** Real-time summary cards showing Total, To Do, In Progress, and Completed task counts.
+- **Search, Filter & Sort:** Search by task title or description, filter by status or priority, and sort by newest first, due date, priority, or title.
+- **Full CRUD & Quick Status Cycle:** Create new tasks, view full task details, edit existing tasks, delete tasks, or cycle task status directly from the list with client-side form validation.
+- **Pagination & States:** Paginated task list with loading skeletons, empty state screens, error retry banners, and toast notifications.
+- **Responsive Design:** Adapts cleanly across mobile, tablet, and desktop screen sizes.
+
+## Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Icons:** `lucide-react`
+- **Data Layer:** JSON Server (`db.json`) + `localStorage` fallback
+
+## Project Structure
+
+```text
+task-dashboard/
+├── db.json
+├── public/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
+│   ├── components/
+│   │   ├── StatsOverview.tsx
+│   │   ├── TaskFilters.tsx
+│   │   ├── TaskFormModal.tsx
+│   │   └── TaskDetailsModal.tsx
+│   ├── services/
+│   │   └── taskService.ts
+│   └── types/
+│       └── task.ts
+├── package.json
+└── README.md
 
 ## Getting Started
+1. **Install dependencies:**
+```bash
+npm install
 
-First, run the development server:
-
+2. **Start the development server:**
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 (or the local URL shown in the terminal, such as http://localhost:3001) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Optional — Run JSON Server on port 5000:
+```bash
+npx json-server --watch db.json --port 5000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Author
+Janadhi Chamudini (rbjcjayalath) — BSc (Hons) in Computer Science
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
