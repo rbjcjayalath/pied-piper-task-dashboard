@@ -49,11 +49,21 @@ task-dashboard/
 # Strict TypeScript & Client-Side Validation: Strongly typed domain models in src/types/task.ts help catch data mismatches early, paired with form validation, loading/empty/error states, and toast feedback for a smooth UX.
 
 ## Screenshots
-Dashboard Overview (Page 1)
-Task List & Pagination (Page 2)
-Create Task Modal
-Task Details Modal
-Edit Task Modal
+
+### Dashboard Overview (Page 1)
+![Dashboard Overview Page 1](./screenshots/dashboard-page-1.png)
+
+### Task List & Pagination (Page 2)
+![Task List Page 2](./screenshots/dashboard-page-2.png)
+
+### Create Task Modal
+![Create Task Modal](./screenshots/create-task-modal.png)
+
+### Task Details Modal
+![Task Details Modal](./screenshots/task-details-modal.png)
+
+### Edit Task Modal
+![Edit Task Modal](./screenshots/edit-task-modal.png)
 
 ## Getting Started
 1. **Install dependencies:**
